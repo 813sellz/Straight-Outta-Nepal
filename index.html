@@ -6,7 +6,7 @@
   <title>Straight Outta Nepal</title>
   <meta
     name="description"
-    content="Straight Outta Nepal is a North America-based PUBG Mobile esports team founded in 2020."
+    content="Straight Outta Nepal is a North America-based esports and entertainment organization providing competitive PUBG Mobile team participation, gaming media content, promotional media, and fan-facing digital entertainment under the STRAIGHT OUTTA NEPAL brand."
   />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -23,10 +23,12 @@
 
       <nav class="nav">
         <a href="#featured">Highlights</a>
+        <a href="#services">Services</a>
         <a href="#gallery">Gallery</a>
         <a href="#about">About</a>
         <a href="#roster">Roster</a>
         <a href="#achievements">Results</a>
+        <a href="#media">Media</a>
         <a href="#contact">Contact</a>
         <a href="#showcase">Identity</a>
       </nav>
@@ -41,18 +43,19 @@
           <h1>
             Straight Outta <span class="accent">Nepal</span>
           </h1>
+
           <p>
-            Straight Outta Nepal is a North America-based PUBG Mobile esports team competing with a bold identity, strong community roots, and a growing record across top regional events.
+            Straight Outta Nepal is a North America-based esports and entertainment organization providing competitive PUBG Mobile team participation, digital gaming content, promotional media, and fan-facing esports entertainment under the <strong>STRAIGHT OUTTA NEPAL</strong> brand.
           </p>
 
           <div class="hero-cta">
-            <a class="btn btn-primary" href="#featured">Watch Intro</a>
-            <a class="btn btn-secondary" href="#gallery">PMSL Collection</a>
+            <a class="btn btn-primary" href="#featured">Watch Highlights</a>
+            <a class="btn btn-secondary" href="#gallery">Explore Gallery</a>
             <a class="btn btn-secondary" href="https://www.instagram.com/straight_outta_nepal/" target="_blank" rel="noreferrer">Instagram</a>
           </div>
 
           <div class="ticker hero-ticker">
-            
+            <span><a href="https://www.instagram.com/straight_outta_nepal/" target="_blank" rel="noreferrer">@straight_outta_nepal</a></span>
             <span><a href="https://www.youtube.com/@straightouttanepal-1" target="_blank" rel="noreferrer">YouTube</a></span>
             <span><a href="https://www.tiktok.com/@_sopnilneupane_" target="_blank" rel="noreferrer">SONxWolf</a></span>
             <span><a href="https://www.tiktok.com/@sonxspence" target="_blank" rel="noreferrer">SONxSpence</a></span>
@@ -78,16 +81,19 @@
         <div class="hero-visual">
           <div class="hero-glow"></div>
           <div class="hero-card">
-            <video class="hero-video" autoplay muted loop playsinline>
-              <source src="https://res.cloudinary.com/dc2jswnlv/video/upload/f_auto,q_auto/v1774068353/PMSL-Brazil-intro_ccawdo.mov" />
+            <!-- Replace this source yourself with the correct PMSL intro -->
+            <video class="hero-video" autoplay muted loop playsinline poster="assets/images/team-1.jpg">
+              <source src="assets/videos/PMSL-Brazil-intro.mp4" type="video/mp4" />
             </video>
+
             <img class="hero-logo" src="assets/logo/son-logo-transp.png" alt="SON logo mark" />
+
             <div class="hero-overlay">
               <div>
-                <div class="hero-overlay-title">PMSL Americas Brazil — LAN</div>
+                <div class="hero-overlay-title">PMSL Americas Brazil</div>
                 <div class="hero-overlay-copy">Official intro moment from SON’s LAN run.</div>
               </div>
-              <a class="btn btn-secondary" href="#gallery">Explore Gallery</a>
+              <a class="btn btn-secondary" href="#featured">Watch with Sound</a>
             </div>
           </div>
         </div>
@@ -95,43 +101,82 @@
     </section>
 
     <section id="featured">
-        <div class="container">
-          <div class="section-head">
-            <div>
-              <span class="section-kicker">Featured</span>
-              <h2>Featured Moments</h2>
-            </div>
-            <p>
-              Key story-driven clips from Straight Outta Nepal, from PMSL Americas Brazil to the Nepal-to-USA journey.
-            </p>
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker">Featured</span>
+            <h2>Featured Moments</h2>
           </div>
-      
-          <div class="media-grid">
-            <article class="video-card featured-video-card">
-              <video controls playsinline preload="metadata">
-                <source src="https://res.cloudinary.com/dc2jswnlv/video/upload/f_auto,q_auto/v1774068353/PMSL-Brazil-intro_ccawdo.mov" />
-              </video>
-              <h3>PMSL Americas Brazil</h3>
-              <p>Official intro moment from SON’s LAN run. Watch with sound.</p>
-            </article>
-      
-            <article class="video-card featured-video-card">
-              <video controls playsinline preload="metadata">
-                <source src="https://res.cloudinary.com/dc2jswnlv/video/upload/f_auto,q_auto/v1774068341/Nepal-to-USA_lfaegv.mp4" type="video/mp4" />
-              </video>
-              <h3>Nepal to USA</h3>
-              <p>A visual story connecting the team’s roots, identity, and journey.</p>
-            </article>
-          </div>
+          <p>
+            Key story-driven clips from Straight Outta Nepal, from PMSL Americas Brazil to the Nepal-to-USA journey.
+          </p>
         </div>
-      </section>
+
+        <div class="media-grid">
+          <article class="video-card featured-video-card">
+            <video controls playsinline preload="metadata" >
+              <source src="assets/videos/PMSL-Brazil-intro.mp4" type="video/mp4" />
+            </video>
+            <h3>PMSL Americas Brazil</h3>
+            <p>Official intro moment from SON’s LAN run. Watch with sound.</p>
+          </article>
+
+          <article class="video-card featured-video-card">
+            <video controls playsinline preload="metadata" >
+              <source src="https://res.cloudinary.com/dc2jswnlv/video/upload/v1774068341/Nepal-to-USA_lfaegv.mp4" type="video/mp4" />
+            </video>
+            <h3>Nepal to USA</h3>
+            <p>A visual story connecting the team’s roots, identity, and journey.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker">Services</span>
+            <h2>Esports and Entertainment Services</h2>
+          </div>
+          <p>
+            Straight Outta Nepal provides esports entertainment services through competitive PUBG Mobile team participation, live and recorded gaming content, team-branded media, promotional appearances, and fan-facing digital entertainment.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="feature">
+            <h3>What Straight Outta Nepal Offers</h3>
+            <ul>
+              <li>Competitive esports team participation in PUBG Mobile events</li>
+              <li>Live and recorded online gaming entertainment content</li>
+              <li>Team-branded video highlights, event media, and promotional content</li>
+              <li>Social media entertainment and community engagement</li>
+              <li>Brand collaborations, promotional partnerships, and esports appearances</li>
+            </ul>
+          </article>
+
+          <article class="timeline">
+            <h3>Business and Partnership Inquiries</h3>
+            <p>
+              Straight Outta Nepal is an esports organization and entertainment brand serving audiences through competitive gaming, digital content, team media, and public-facing esports participation.
+            </p>
+            <ul>
+              <li>North America-based organization with Nepali identity</li>
+              <li>Public-facing competitive team and content platform</li>
+              <li>Available for partnerships and promotional opportunities</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
 
     <section id="gallery">
       <div class="container">
         <div class="section-head">
           <div>
             <span class="section-kicker">Gallery</span>
-            <h2>PMSL Americas collection</h2>
+            <h2>PMSL Americas Collection</h2>
           </div>
           <p>
             Official moments from SON across PMSL Americas Brazil and PMSL Americas Qualifier Fall, kept separate for a cleaner timeline.
@@ -142,43 +187,43 @@
           <div class="gallery-group">
             <div class="gallery-group-head">
               <h3>PMSL Americas Brazil</h3>
-              <p>Brazil LAN moments, team stage shots, player coverage, and featured event clips.</p>
+              <p>Brazil LAN moments, team stage shots, player coverage, and event clips from the LAN run.</p>
             </div>
 
             <div class="gallery-grid">
               <div class="gallery-item span-7" data-full="assets/images/team-1.jpg">
-                <img src="assets/images/team-1.jpg" alt="SON Brazil team stage" />
+                <img src="assets/images/team-1.jpg" alt="Straight Outta Nepal team stage at PMSL Americas Brazil" />
                 <div class="gallery-label">Team Stage</div>
               </div>
 
               <div class="gallery-item span-5" data-full="assets/images/gatsby-2.jpg">
-                <img src="assets/images/gatsby-2.jpg" alt="Gatsby" />
+                <img src="assets/images/gatsby-2.jpg" alt="Gatsby at PMSL Americas Brazil" />
                 <div class="gallery-label">Gatsby</div>
               </div>
 
               <div class="gallery-item span-4" data-full="assets/images/wolf-3.jpg">
-                <img src="assets/images/wolf-3.jpg" alt="Wolf" />
+                <img src="assets/images/wolf-3.jpg" alt="Wolf at PMSL Americas Brazil" />
                 <div class="gallery-label">Wolf</div>
               </div>
 
               <div class="gallery-item span-4" data-full="assets/images/kc-4.jpg">
-                <img src="assets/images/kc-4.jpg" alt="KC" />
+                <img src="assets/images/kc-4.jpg" alt="KC at PMSL Americas Brazil" />
                 <div class="gallery-label">KC</div>
               </div>
 
               <div class="gallery-item span-4" data-full="assets/images/leon.jpg">
-                <img src="assets/images/leon.jpg" alt="Leon" />
+                <img src="assets/images/leon.jpg" alt="Leon at PMSL Americas Brazil" />
                 <div class="gallery-label">Leon</div>
               </div>
 
-              <div class="gallery-item span-6" data-full="assets/images/team-3.jpg">
-                <img src="assets/images/team-3.jpg" alt="SON Brazil roster" />
-                <div class="gallery-label">Brazil Roster</div>
+              <div class="gallery-item span-6" data-full="assets/images/team-2.jpg">
+                <img src="assets/images/team-2.jpg" alt="Straight Outta Nepal stage presence at PMSL Americas Brazil" />
+                <div class="gallery-label">Stage Presence</div>
               </div>
 
               <div class="gallery-item span-6 video-item">
-                <video controls playsinline preload="metadata">
-                  <source src="https://res.cloudinary.com/dc2jswnlv/video/upload/v1774068355/PMSL-Americas-clips-1_agla60.mov" type="video/mp4" />
+                <video controls playsinline preload="metadata" poster="assets/images/team-1.jpg">
+                  <source src="assets/videos/PMSL-Americas-clips-1.mp4" type="video/mp4" />
                 </video>
                 <div class="gallery-label">Brazil Clip</div>
               </div>
@@ -188,17 +233,17 @@
           <div class="gallery-group">
             <div class="gallery-group-head">
               <h3>PMSL Americas Qualifier Fall</h3>
-              <p>Qualifier graphics and lineup visuals from the Fall run.</p>
+              <p>Qualifier graphics, result posters, and lineup visuals from the Fall run.</p>
             </div>
 
             <div class="gallery-grid">
-              <div class="gallery-item span-6" data-full="assets/images/pmsl-lineup.JPG">
-                <img src="assets/images/pmsl-lineup.JPG" alt="PMSL lineup graphic" />
+              <div class="gallery-item span-7" data-full="assets/images/pmsl-lineup.JPG">
+                <img src="assets/images/pmsl-lineup.JPG" alt="Straight Outta Nepal PMSL Americas Qualifier Fall lineup graphic" />
                 <div class="gallery-label">Lineup</div>
               </div>
 
-              <div class="gallery-item span-6" data-full="assets/images/pmsl-na-final-qualified.JPG">
-                <img src="assets/images/pmsl-na-final-qualified.JPG" alt="Qualified graphic" />
+              <div class="gallery-item span-5" data-full="assets/images/pmsl-na-final-qualified.JPG">
+                <img src="assets/images/pmsl-na-final-qualified.JPG" alt="Straight Outta Nepal qualified graphic for PMSL Americas Fall" />
                 <div class="gallery-label">Qualified</div>
               </div>
             </div>
@@ -212,7 +257,7 @@
         <div class="section-head">
           <div>
             <span class="section-kicker">About the org</span>
-            <h2>Built for competition</h2>
+            <h2>Built for Competition</h2>
           </div>
           <p>
             A sharp team identity built around high-level competition, Nepali pride, and a growing presence in North American PUBG Mobile.
@@ -221,15 +266,15 @@
 
         <div class="about-grid">
           <article class="feature">
-            <h3>Team Profile</h3>
+            <h3>Organization Profile</h3>
             <p>
-              Straight Outta Nepal has grown from a community-driven roster into a recognizable PUBG Mobile brand with qualifier success, public tournament results, and a standout visual identity.
+              Straight Outta Nepal is an esports organization offering entertainment services in the field of competitive gaming, including team participation in esports events, video content, branded promotions, and digital audience engagement.
             </p>
             <ul>
-              <li>North America-based PUBG Mobile organization</li>
+              <li>North America-based esports organization</li>
               <li>Founded in 2020</li>
-              <li>Competes under the SON tag</li>
-              <li>Owner: Arman Bhandari, Columbia, South Carolina</li>
+              <li>Competitive PUBG Mobile team and media brand</li>
+              <li>Operates under the STRAIGHT OUTTA NEPAL mark</li>
             </ul>
           </article>
 
@@ -242,7 +287,7 @@
               <li>Current roster featured below</li>
               <li>PMSL Americas Brazil and qualifier moments preserved separately</li>
               <li>Team visuals and jerseys built into the site experience</li>
-              <li>Highlights and gallery lead the first impression</li>
+              <li>Media section ready for clips, highlights, and future match content</li>
             </ul>
           </article>
         </div>
@@ -263,7 +308,7 @@
 
         <div class="roster-grid">
           <article class="player-card">
-            <img class="player-photo" src="assets/images/no-photo.png" alt="Spence" />
+            <img class="player-photo" src="assets/images/no-photo.png" alt="Spence of Straight Outta Nepal" />
             <span class="player-tag">IGL</span>
             <img class="player-icon" src="assets/logo/son-logo-transp.png" alt="SON icon" />
             <div class="player-copy">
@@ -273,7 +318,7 @@
           </article>
 
           <article class="player-card">
-            <img class="player-photo" src="https://res.cloudinary.com/dc2jswnlv/image/upload/v1774069992/PMSL-kc-1_m7flz9.png" alt="KC" />
+            <img class="player-photo" src="https://res.cloudinary.com/dc2jswnlv/image/upload/v1774069992/PMSL-kc-1_m7flz9.png" alt="KC of Straight Outta Nepal" />
             <span class="player-tag">Entry Fragger</span>
             <img class="player-icon" src="assets/logo/son-logo-transp.png" alt="SON icon" />
             <div class="player-copy">
@@ -283,7 +328,7 @@
           </article>
 
           <article class="player-card">
-            <img class="player-photo" src="https://res.cloudinary.com/dc2jswnlv/image/upload/v1774069992/PMSL-wolf-2_jw9qdv.png" alt="Wolf" />
+            <img class="player-photo" src="https://res.cloudinary.com/dc2jswnlv/image/upload/v1774069992/PMSL-wolf-2_jw9qdv.png" alt="Wolf of Straight Outta Nepal" />
             <span class="player-tag">Entry Fragger</span>
             <img class="player-icon" src="assets/logo/son-logo-transp.png" alt="SON icon" />
             <div class="player-copy">
@@ -293,7 +338,7 @@
           </article>
 
           <article class="player-card">
-            <img class="player-photo" src="assets/images/no-photo.png" alt="Neyo" />
+            <img class="player-photo" src="assets/images/no-photo.png" alt="Neyo of Straight Outta Nepal" />
             <span class="player-tag">Support</span>
             <img class="player-icon" src="assets/logo/son-logo-transp.png" alt="SON icon" />
             <div class="player-copy">
@@ -303,7 +348,7 @@
           </article>
 
           <article class="player-card">
-            <img class="player-photo" src="assets/images/no-photo.png" alt="69" />
+            <img class="player-photo" src="assets/images/no-photo.png" alt="69 of Straight Outta Nepal" />
             <span class="player-tag">Support</span>
             <img class="player-icon" src="assets/logo/son-logo-transp.png" alt="SON icon" />
             <div class="player-copy">
@@ -320,7 +365,7 @@
         <div class="section-head">
           <div>
             <span class="section-kicker">Competitive record</span>
-            <h2>Results and earnings</h2>
+            <h2>Results and Earnings</h2>
           </div>
           <p>
             Highlights from SON’s public results across challengers, qualifiers, and regional events.
@@ -360,25 +405,58 @@
       </div>
     </section>
 
+    <section id="media">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker">Media</span>
+            <h2>Highlights and Socials</h2>
+          </div>
+          <p>
+            Follow SON across TikTok, YouTube, and Instagram, and watch featured clips directly on the site.
+          </p>
+        </div>
+
+        <div class="media-grid">
+          <article class="video-card">
+            <video controls playsinline preload="metadata" poster="assets/images/team-1.jpg">
+              <source src="assets/videos/PMSL-Brazil-intro.mp4" type="video/mp4" />
+            </video>
+            <h3>PMSL Americas Brazil Intro</h3>
+            <p>Official intro clip from SON’s Brazil event appearance.</p>
+          </article>
+
+          <article class="video-card">
+            <video controls playsinline preload="metadata" >
+              <source src="https://res.cloudinary.com/dc2jswnlv/video/upload/v1774068341/Nepal-to-USA_lfaegv.mp4" type="video/mp4" />
+            </video>
+            <h3>Nepal to USA Journey</h3>
+            <p>A story-led clip tying the organization’s roots, identity, and international journey together.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="contact">
       <div class="container">
         <div class="section-head">
           <div>
             <span class="section-kicker">Contact</span>
-            <h2>Connect with SON</h2>
+            <h2>Bookings, Partnerships, and Media</h2>
           </div>
           <p>
-            Follow the team, keep up with content drops, and stay tuned for future announcements and partnerships.
+            Straight Outta Nepal provides esports entertainment, branded gaming content, and promotional media opportunities.
           </p>
         </div>
 
         <div class="contact-grid">
           <article class="contact-card">
-            <h3>Straight Outta Nepal</h3>
+            <h3>Official Channels</h3>
             <p>
-              North America-based PUBG Mobile esports organization founded in 2020.
+              For partnerships, collaborations, appearances, sponsorships, or business inquiries, contact the organization through its official channels.
             </p>
             <p class="note">
+              Website: <a class="inline-link" href="https://straightouttanepal.gg" target="_blank" rel="noreferrer">straightouttanepal.gg</a><br />
               Instagram: <a class="inline-link" href="https://www.instagram.com/straight_outta_nepal/" target="_blank" rel="noreferrer">@straight_outta_nepal</a><br />
               YouTube: <a class="inline-link" href="https://www.youtube.com/@straightouttanepal-1" target="_blank" rel="noreferrer">@straightouttanepal-1</a><br />
               TikTok: <a class="inline-link" href="https://www.tiktok.com/@sonxsyung" target="_blank" rel="noreferrer">@sonxsyung</a>
@@ -386,12 +464,13 @@
           </article>
 
           <article class="contact-card">
-            <h3>Public profile</h3>
+            <h3>Public Profile</h3>
             <p>
-              Explore the team’s public competitive history and recorded placements.
+              Explore the team’s public competitive history, placements, and roster record.
             </p>
             <p class="note">
-              Liquipedia: <a class="inline-link" href="https://liquipedia.net/pubgmobile/Straight_Outta_Nepal" target="_blank" rel="noreferrer">Straight Outta Nepal</a>
+              Liquipedia: <a class="inline-link" href="https://liquipedia.net/pubgmobile/Straight_Outta_Nepal" target="_blank" rel="noreferrer">Straight Outta Nepal</a><br />
+              Region focus: Nepal-rooted identity with North America competition presence.
             </p>
           </article>
         </div>
@@ -403,7 +482,7 @@
         <div class="section-head">
           <div>
             <span class="section-kicker">Brand identity</span>
-            <h2>Logo and jersey</h2>
+            <h2>Logo and Jersey</h2>
           </div>
           <p>
             The visual system behind SON’s esports identity, from logo presentation to official teamwear.
@@ -412,27 +491,27 @@
 
         <div class="showcase-grid">
           <article class="showcase-card">
-            <img src="https://res.cloudinary.com/dc2jswnlv/image/upload/v1774071074/jersey-front_luhn7z.png" alt="Straight Outta Nepal jersey front design" />
+            <img src="https://res.cloudinary.com/dc2jswnlv/image/upload/v1774071074/jersey-front_luhn7z.png alt="Straight Outta Nepal official team jersey front design" />
             <h3>Official Team Jersey</h3>
-            <p>The current jersey design built around a sharp black, white, and red competitive look represting Nepal's mountain and heritages</p>
+            <p>The current jersey design built around a sharp black, white, and red competitive look.</p>
           </article>
 
           <article class="showcase-card">
-            <img src="assets/logo/son-logo-transp-name.png" alt="Straight Outta Nepal final logo" />
+            <img src="assets/logo/son-logo-transp-name.png" alt="Straight Outta Nepal primary logo" />
             <h3>Primary Logo System</h3>
             <p>A clean logo system used across team branding, content graphics, headers, and overlays.</p>
           </article>
 
           <article class="showcase-card">
-            <img src="https://res.cloudinary.com/dc2jswnlv/image/upload/v1774071073/jersey-back_a7fsla.png" alt="Straight Outta Nepal jersey back design" />
+            <img src="https://res.cloudinary.com/dc2jswnlv/image/upload/v1774071073/jersey-back_a7fsla.png alt="Straight Outta Nepal jersey back design" />
             <h3>Back Jersey View</h3>
             <p>Built for player names, custom numbers, and future merch or teamwear showcases.</p>
           </article>
 
           <article class="showcase-card">
-            <img src="https://res.cloudinary.com/dc2jswnlv/image/upload/v1774069993/floating-front_g66ryv.png" alt="Floating Jersey" />
-            <h3>Floating Jerseys</h3>
-            <p>Showcasing jersey in floating way</p>
+            <img src="assets/images/watchparty.jpeg" alt="Straight Outta Nepal event graphic" />
+            <h3>Event Graphics</h3>
+            <p>Matchday visuals and event creative that strengthen the org’s overall media presence.</p>
           </article>
         </div>
       </div>
@@ -440,9 +519,18 @@
   </main>
 
   <footer class="footer">
-    <div class="container footer-inner">
-      <div>© <span id="year"></span> Straight Outta Nepal. All rights reserved.</div>
-      <div>straightouttanepal.gg</div>
+    <div class="container">
+      <div class="contact-card" style="padding:16px 20px; margin-bottom: 20px;">
+        <div style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; color:#d8dde7;">
+          <span>Website: https://straightouttanepal.gg</span>
+          <span>Accessed: March 21, 2026</span>
+        </div>
+      </div>
+
+      <div class="footer-inner">
+        <div>© 2026 Straight Outta Nepal. Esports and entertainment services. All rights reserved.</div>
+        <div>straightouttanepal.gg</div>
+      </div>
     </div>
   </footer>
 
