@@ -1,33 +1,47 @@
-document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById("year").textContent = new Date().getFullYear();
 
-const lightbox = document.getElementById('lightbox');
-const lightboxImage = document.getElementById('lightboxImage');
-const lightboxClose = document.getElementById('lightboxClose');
-const galleryItems = document.querySelectorAll('.gallery-item[data-full]');
+const accessedDate = document.getElementById("accessed-date");
+if (accessedDate) {
+  const now = new Date();
+  accessedDate.textContent = `Accessed: ${now.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric"
+  })}`;
+}
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+const lightboxClose = document.getElementById("lightboxClose");
+const galleryItems = document.querySelectorAll(".gallery-item.image-item");
 
 galleryItems.forEach((item) => {
-  item.addEventListener('click', (event) => {
-    if (event.target.tagName.toLowerCase() === 'video') return;
-    const full = item.getAttribute('data-full');
+  item.addEventListener("click", () => {
+    const full = item.getAttribute("data-full");
     if (!full) return;
     lightboxImage.src = full;
-    lightbox.classList.add('open');
-    lightbox.setAttribute('aria-hidden', 'false');
+    lightbox.classList.add("open");
+    lightbox.setAttribute("aria-hidden", "false");
   });
 });
 
 function closeLightbox() {
-  lightbox.classList.remove('open');
-  lightbox.setAttribute('aria-hidden', 'true');
-  lightboxImage.src = '';
+  if (!lightbox) return;
+  lightbox.classList.remove("open");
+  lightbox.setAttribute("aria-hidden", "true");
+  if (lightboxImage) lightboxImage.src = "";
 }
 
-lightboxClose.addEventListener('click', closeLightbox);
+if (lightboxClose) {
+  lightboxClose.addEventListener("click", closeLightbox);
+}
 
-lightbox.addEventListener('click', (e) => {
-  if (e.target === lightbox) closeLightbox();
-});
+if (lightbox) {
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+}
 
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') closeLightbox();
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeLightbox();
 });
